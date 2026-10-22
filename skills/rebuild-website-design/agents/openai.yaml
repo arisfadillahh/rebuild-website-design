@@ -1,0 +1,8 @@
+interface:
+  display_name: "Rebuild Website Design"
+  short_description: "Riset brand, redesign, Penpot, dan preview website"
+  default_prompt: "Pakai $rebuild-website-design untuk meriset situs ini lalu membuat redesign yang cocok dengan bisnisnya, desain Penpot desktop/mobile, dan preview interaktif untuk penawaran website."
+
+policy:
+  allow_implicit_invocation: true
+
