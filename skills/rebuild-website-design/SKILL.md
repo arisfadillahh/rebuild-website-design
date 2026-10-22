@@ -16,14 +16,16 @@ Ubah situs asal menjadi konsep redesign yang meyakinkan untuk bisnisnya. Utamaka
 
 ## Riset sebelum desain
 
-Baca [Riset dan arah desain](references/research-and-direction.md) sebelum menentukan struktur dan visual.
+Baca dan jalankan urutan di [Riset dan arah desain](references/research-and-direction.md). Pertahankan hubungan bukti → keputusan seperti pada proses Veselka; gaya visualnya mengikuti bisnis yang sedang diteliti.
 
-- Teliti situs asal: homepage, cerita bisnis, produk/layanan, harga yang relevan, FAQ, kontak, dan CTA.
-- Lihat situs di browser. Ekstraksi teks saja tidak menjelaskan kualitas foto, hierarki, kepadatan, atau masalah mobile.
-- Simpan sumber dan tanggal pengecekan. Bedakan fakta situs, masalah yang diamati, interpretasi desain, dan hipotesis dampak bisnis.
-- Jika pengguna membatasi sumber, patuhi pembatasan itu. “Semua info dan aset dari situs ini” berarti jangan menambah foto stok, logo buatan, data pesaing, atau klaim dari luar situs.
-- Bila sumber luar diizinkan dan riset tambahan diperlukan, cari rujukan yang relevan untuk pola penggunaan atau kategori bisnis. Catat sumbernya; jangan mengganti identitas brand dengan tampilan pesaing.
-- Bentuk inventaris aset terpilih: URL halaman, URL aset, nama lokal, fungsi, ukuran, dan kepemilikan. Ambil resolusi yang layak dan periksa fotonya sebelum dipakai.
+1. Audit homepage di browser: kesan awal, navigasi, hierarki, foto, kepadatan katalog/promosi, CTA, dan masalah yang benar-benar terlihat. Petakan halaman lanjutan yang perlu diperiksa.
+2. Baca cerita bisnis, kategori, sampel produk/layanan yang mewakili penawaran, FAQ, dan kontak. Catat fakta per produk/layanan, harga yang relevan, variasi, kelengkapan, dan tujuan CTA; jangan berhenti pada homepage.
+3. Cocokkan klaim dengan halaman sumbernya. Simpan URL dan tanggal; pisahkan fakta, observasi, interpretasi, dan hipotesis. Catat informasi yang bertentangan atau belum terverifikasi.
+4. Inventarisasi dan lihat aset asli: logo, foto produk, foto editorial, resolusi, rasio, teks dalam gambar, dan kemungkinan crop. Tentukan fungsi setiap aset sebelum mengunci komposisi.
+5. Turunkan arah desain dari bukti: tawaran bisnis → kekuatan/hambatan → keputusan visual, urutan section, dan interaksi. Gunakan contoh Veselka di referensi untuk memahami hubungan ini.
+6. Tulis `docs/RESEARCH.md` atau dokumen setara sebelum membuat desain utama/prototype. Sertakan sumber, temuan, pemetaan keputusan, aset terpilih, scope, dan keterbatasan. Periksa kecukupan riset; lanjutkan mandiri bila sudah cukup, tanpa menambahkan gerbang persetujuan.
+
+Jika pengguna membatasi sumber, patuhi pembatasan itu. “Semua info dan aset dari situs ini” berarti jangan menambah foto stok, logo buatan, data pesaing, atau klaim dari luar situs. Bila sumber luar diizinkan dan diperlukan, catat rujukannya tanpa mengganti identitas brand. Riset dapat diperbarui saat desain mengungkap kebutuhan baru; tandai perubahan keputusan dan dasarnya.
 
 ## Rumuskan arah visual yang cocok
 
@@ -60,4 +62,3 @@ Handoff harus singkat dan berisi:
 - Pemeriksaan yang dilakukan dan batas implementasi yang masih material.
 
 Jangan mengakhiri tugas pada rencana, screenshot kosong, atau klaim “tersambung” tanpa hasil yang dapat diperiksa.
-

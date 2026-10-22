@@ -4,6 +4,8 @@ Skill Codex untuk merancang ulang website berdasarkan riset bisnis, konten, dan 
 
 Alurnya: **riset → arah desain → desain editable → prototype interaktif → QA desktop/mobile → handoff**. Pilihan visual mengikuti bisnis yang diteliti; skill ini tidak mengunci semua proyek ke satu gaya.
 
+Risetnya mengikuti proses Veselka: **audit situs di browser → baca cerita bisnis, kategori, detail produk/layanan, FAQ, dan kontak → cocokkan fakta → lihat dan pilih aset asli → hubungkan temuan ke keputusan desain → tulis dokumen riset sebelum desain utama**. [Panduan riset](skills/rebuild-website-design/references/research-and-direction.md) memuat urutan, kriteria kecukupan riset, dan contoh hubungan bukti–keputusan pada Veselka.
+
 ## Cara pakai
 
 Setelah skill terpasang, panggil dengan nama teknis **$rebuild-website-design**. Nama yang tampil di daftar skill adalah **Rebuild Website Design**.
@@ -38,7 +40,7 @@ Jika scope belum ditentukan, skill memulai dari halaman dan alur utama yang pali
 
 ## Hasil yang diharapkan
 
-- Catatan riset beserta URL sumber, tanggal pengecekan, dan alasan arah desain.
+- Dokumen riset sebelum desain utama, beserta URL sumber, tanggal, temuan visual, dan pemetaan bukti ke keputusan desain.
 - Konten dan aset yang dapat ditelusuri ke sumber asli.
 - Desain Penpot yang bisa diedit, jika mode Penpot dipilih.
 - Prototype dengan interaksi yang benar-benar bekerja, sesuai scope.
@@ -101,5 +103,4 @@ Skill tidak membawa token, kredensial, akun klien, maupun konfigurasi hosting pr
 
 Riset mendahului keputusan visual. Gunakan foto asli sebagai dasar jika diminta. Jangan mengarang testimoni, angka penjualan, klaim produk, diskon, stok, atau peningkatan konversi. Pisahkan fakta sumber dari interpretasi desain. Uji interaksi sebelum mengklaim hasilnya selesai.
 
-Metode ini berasal dari workflow redesign Veselka; materi brand dan foto klien tidak disertakan dalam paket skill. Gaya warna dan tipografi pada contoh tersebut bukan aturan untuk bisnis lain.
-
+Metode ini berasal dari workflow redesign Veselka; panduan memuat contoh hubungan temuan dan keputusan, sedangkan foto serta file desain klien tidak disertakan dalam paket skill. Gaya warna dan tipografi pada contoh tersebut bukan aturan untuk bisnis lain.
