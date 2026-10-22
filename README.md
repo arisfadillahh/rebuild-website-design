@@ -6,6 +6,22 @@ Alurnya: **riset → arah desain → desain editable → prototype interaktif �
 
 Risetnya mengikuti proses Veselka: **audit situs di browser → baca cerita bisnis, kategori, detail produk/layanan, FAQ, dan kontak → cocokkan fakta → lihat dan pilih aset asli → hubungkan temuan ke keputusan desain → tulis dokumen riset sebelum desain utama**. [Panduan riset](skills/rebuild-website-design/references/research-and-direction.md) memuat urutan, kriteria kecukupan riset, dan contoh hubungan bukti–keputusan pada Veselka.
 
+## Mulai cepat
+
+**1. Install skill.** Salin prompt ini ke Codex:
+
+~~~text
+Pakai $skill-installer untuk memasang skill dari
+https://github.com/arisfadillahh/rebuild-website-design/tree/main/skills/rebuild-website-design.
+Setelah selesai, cek bahwa $rebuild-website-design bisa ditemukan.
+~~~
+
+Repo ini privat, jadi akun GitHub pada perangkat yang memasang harus memiliki akses. Skill siap dipakai pada giliran berikutnya; jika belum terdeteksi, mulai ulang Codex. [Alternatif instalasi manual dan pembaruan](#instalasi-manual-dan-pembaruan) ada di bawah.
+
+**2. Sambungkan Penpot.** Ikuti [panduan Penpot langkah demi langkah](skills/rebuild-website-design/references/mcp-setup.md#remote-resmi): login → aktifkan MCP → salin URL → konfigurasi Codex → buka file desain → **File → MCP Server → Connect**. Panduan mencakup contoh konfigurasi dan prompt untuk memastikan canvas bisa dibaca. Ini cukup dilakukan saat setup; pada penggunaan berikutnya, buka file tujuan dan pastikan status MCP tersambung.
+
+**3. Mulai redesign.** Gunakan contoh prompt lengkap di bagian berikut. Pemasangan skill tidak memasang MCP atau menghubungkan akun secara otomatis. Untuk alur lengkap dengan desain editable, siapkan browser automation, Penpot, serta kemampuan file/runtime; kebutuhan lain dijelaskan pada [matriks MCP](#mcp-dan-kemampuan-yang-diperlukan).
+
 ## Cara pakai
 
 Setelah skill terpasang, panggil dengan nama teknis **$rebuild-website-design**. Nama yang tampil di daftar skill adalah **Rebuild Website Design**.
@@ -66,18 +82,14 @@ Browser automation dan Sites dapat disediakan oleh plugin host; keduanya bukan n
 
 Panduan koneksi, pemilihan server Penpot, dan fallback ada di [MCP setup](skills/rebuild-website-design/references/mcp-setup.md).
 
-## Instalasi di Codex
+## Instalasi manual dan pembaruan
 
-Minta Codex dengan skill-installer:
+Cara utama adalah prompt `$skill-installer` pada bagian [Mulai cepat](#mulai-cepat), sesuai [panduan skill resmi Codex](https://developers.openai.com/codex/skills). Jika ingin menyalin sendiri:
 
-~~~text
-Install skill dari repo arisfadillahh/rebuild-website-design,
-path skills/rebuild-website-design.
-~~~
-
-Atau salin folder skills/rebuild-website-design dari repo ini ke folder skills pada CODEX_HOME, biasanya ~/.codex/skills/rebuild-website-design. Di Windows, gunakan folder .codex/skills pada profil pengguna.
-
-Buka sesi Codex baru jika skill belum muncul. Pastikan struktur akhirnya:
+1. Buka repo dengan akun GitHub yang punya akses, lalu clone atau unduh ZIP dan ekstrak.
+2. Salin **hanya folder `skills/rebuild-website-design`** beserta isinya ke `$CODEX_HOME/skills/`. Lokasi default Linux/macOS: `~/.codex/skills/`; Windows: `%USERPROFILE%\.codex\skills\`.
+3. Pastikan `SKILL.md` langsung berada di folder `rebuild-website-design` seperti struktur berikut. Jangan menaruh seluruh repo atau menambahkan folder `skills` lagi di dalamnya.
+4. Minta Codex membaca `$rebuild-website-design` dan menyebutkan tahapan risetnya tanpa menjalankan redesign. Jika belum terdeteksi, mulai ulang Codex.
 
 ~~~text
 ~/.codex/skills/rebuild-website-design/
@@ -88,6 +100,18 @@ Buka sesi Codex baru jika skill belum muncul. Pastikan struktur akhirnya:
     research-and-direction.md
     deliverables-and-qa.md
 ~~~
+
+Jika skill sudah terpasang, installer standar berhenti ketika folder tujuan sudah ada. Untuk memperbarui, salin prompt berikut:
+
+~~~text
+Perbarui skill lokal rebuild-website-design dari branch main repo
+arisfadillahh/rebuild-website-design, path skills/rebuild-website-design.
+Bandingkan versi lokal dengan repo dulu. Simpan cadangan di luar folder
+skills jika ada perubahan lokal, lalu sinkronkan dan validasi skill.
+Pertahankan konfigurasi MCP dan kredensial yang sudah terpasang.
+~~~
+
+Jika instalasi menyebut `Repository not found` atau `401/403`, pastikan akses repo tersedia melalui GitHub/Git yang dipakai installer. Login connector di aplikasi belum tentu menyediakan autentikasi Git pada terminal. Gunakan alur login GitHub yang tersedia, atau unduh ZIP lewat browser yang sudah login dan ikuti langkah manual. Jangan menaruh token di prompt atau repository.
 
 Skill tidak membawa token, kredensial, akun klien, maupun konfigurasi hosting proyek tertentu. Hubungkan MCP melalui mekanisme resmi host yang digunakan. Untuk repo privat, akun yang memasang skill perlu memiliki akses GitHub.
 
