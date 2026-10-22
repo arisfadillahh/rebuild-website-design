@@ -16,7 +16,7 @@ https://github.com/arisfadillahh/rebuild-website-design/tree/main/skills/rebuild
 Setelah selesai, cek bahwa $rebuild-website-design bisa ditemukan.
 ~~~
 
-Repo ini privat, jadi akun GitHub pada perangkat yang memasang harus memiliki akses. Skill siap dipakai pada giliran berikutnya; jika belum terdeteksi, mulai ulang Codex. [Alternatif instalasi manual dan pembaruan](#instalasi-manual-dan-pembaruan) ada di bawah.
+Repo ini publik; tidak perlu undangan atau akses GitHub khusus untuk mengunduh skill. Skill siap dipakai pada giliran berikutnya; jika belum terdeteksi, mulai ulang Codex. [Alternatif instalasi manual dan pembaruan](#instalasi-manual-dan-pembaruan) ada di bawah.
 
 **2. Sambungkan Penpot.** Ikuti [panduan Penpot langkah demi langkah](skills/rebuild-website-design/references/mcp-setup.md#remote-resmi): login → aktifkan MCP → salin URL → konfigurasi Codex → buka file desain → **File → MCP Server → Connect**. Panduan mencakup contoh konfigurasi dan prompt untuk memastikan canvas bisa dibaca. Ini cukup dilakukan saat setup; pada penggunaan berikutnya, buka file tujuan dan pastikan status MCP tersambung.
 
@@ -86,7 +86,7 @@ Panduan koneksi, pemilihan server Penpot, dan fallback ada di [MCP setup](skills
 
 Cara utama adalah prompt `$skill-installer` pada bagian [Mulai cepat](#mulai-cepat), sesuai [panduan skill resmi Codex](https://developers.openai.com/codex/skills). Jika ingin menyalin sendiri:
 
-1. Buka repo dengan akun GitHub yang punya akses, lalu clone atau unduh ZIP dan ekstrak.
+1. Buka repo, lalu clone atau unduh ZIP dan ekstrak.
 2. Salin **hanya folder `skills/rebuild-website-design`** beserta isinya ke `$CODEX_HOME/skills/`. Lokasi default Linux/macOS: `~/.codex/skills/`; Windows: `%USERPROFILE%\.codex\skills\`.
 3. Pastikan `SKILL.md` langsung berada di folder `rebuild-website-design` seperti struktur berikut. Jangan menaruh seluruh repo atau menambahkan folder `skills` lagi di dalamnya.
 4. Minta Codex membaca `$rebuild-website-design` dan menyebutkan tahapan risetnya tanpa menjalankan redesign. Jika belum terdeteksi, mulai ulang Codex.
@@ -111,9 +111,9 @@ skills jika ada perubahan lokal, lalu sinkronkan dan validasi skill.
 Pertahankan konfigurasi MCP dan kredensial yang sudah terpasang.
 ~~~
 
-Jika instalasi menyebut `Repository not found` atau `401/403`, pastikan akses repo tersedia melalui GitHub/Git yang dipakai installer. Login connector di aplikasi belum tentu menyediakan autentikasi Git pada terminal. Gunakan alur login GitHub yang tersedia, atau unduh ZIP lewat browser yang sudah login dan ikuti langkah manual. Jangan menaruh token di prompt atau repository.
+Jika instalasi gagal, periksa URL repo, koneksi jaringan, dan pesan rate limit GitHub. Repo ini publik, jadi akses undangan tidak diperlukan. Sebagai alternatif, unduh ZIP lewat browser dan ikuti langkah manual. Jangan menaruh token di prompt atau repository.
 
-Skill tidak membawa token, kredensial, akun klien, maupun konfigurasi hosting proyek tertentu. Hubungkan MCP melalui mekanisme resmi host yang digunakan. Untuk repo privat, akun yang memasang skill perlu memiliki akses GitHub.
+Skill tidak membawa token, kredensial, akun klien, maupun konfigurasi hosting proyek tertentu. Hubungkan MCP melalui mekanisme resmi host yang digunakan, menggunakan akun Penpot masing-masing.
 
 ## Struktur repo
 
